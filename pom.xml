@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ssh</groupId>
+  <artifactId>WebYouth</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>WebYouth Maven Webapp</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <hibernate.version>3.6.10.Final</hibernate.version>
+    <spring.version>3.2.0.RELEASE</spring.version>
+    <struts2.version>2.3.15.3</struts2.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-impl</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-spec</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+
+    <!-- spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-expression</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.9</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+
+    <!-- hibernate -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.hibernate.javax.persistence</groupId>-->
+    <!--<artifactId>hibernate-jpa-2.1-api</artifactId>-->
+    <!--<version>1.0.0.Final</version>-->
+    <!--</dependency>-->
+
+
+    <!-- struts2 -->
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-core</artifactId>
+      <version>${struts2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-spring-plugin</artifactId>
+      <version>${struts2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-junit-plugin</artifactId>
+      <version>${struts2.version}</version>
+    </dependency>
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/ognl/ognl &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>ognl</groupId>-->
+    <!--<artifactId>ognl</artifactId>-->
+    <!--<version>3.0.6</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.freemarker/freemarker &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.freemarker</groupId>-->
+    <!--<artifactId>freemarker</artifactId>-->
+    <!--<version>2.3.19</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.struts.xwork/xwork-core &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.apache.struts.xwork</groupId>-->
+    <!--<artifactId>xwork-core</artifactId>-->
+    <!--<version>2.3.15.3</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/asm/asm &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>asm</groupId>-->
+    <!--<artifactId>asm</artifactId>-->
+    <!--<version>3.3</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/asm/asm-commons &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>asm</groupId>-->
+    <!--<artifactId>asm-commons</artifactId>-->
+    <!--<version>3.3</version>-->
+    <!--</dependency>-->
+
+    <!-- https://mvnrepository.com/artifact/cglib/cglib-nodep -->
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib-nodep</artifactId>
+      <version>2.1_3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.35</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.2</version>
+    </dependency>
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/javassist/javassist &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>javassist</groupId>-->
+    <!--<artifactId>javassist</artifactId>-->
+    <!--<version>3.11.0.GA</version>-->
+    <!--</dependency>-->
+
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    <!--<dependency>-->
+    <!--<groupId>org.apache.commons</groupId>-->
+    <!--<artifactId>commons-lang3</artifactId>-->
+    <!--<version>3.1</version>-->
+    <!--</dependency>-->
+
+  </dependencies>
+
+  <build>
+    <finalName>WebYouth</finalName>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
