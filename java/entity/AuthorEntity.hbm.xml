@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.AuthorEntity" table="author" schema="ssh">
+        <id name="id" column="id"/>
+        <property name="authname" column="authname"/>
+        <property name="authpassword" column="authpassword"/>
+        <property name="sex" column="sex"/>
+        <property name="age" column="age"/>
+        <property name="tel" column="tel"/>
+        <property name="birthday" column="birthday"/>
+        <property name="mail" column="mail"/>
+        <property name="sum" column="sum"/>
+        <property name="clazz" column="clazz"/>
+        <set name="novels" inverse="true">
+            <key>
+                <column name="authorid" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="entity.NovelEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>
